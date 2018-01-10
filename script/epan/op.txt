@@ -1,0 +1,30 @@
+
+	    User Name:- ardhapur2601
+	    Full Name:- NANDED-ARDHAPUR-GP-ardhapur
+	Email Address:- ardhapur2601@epanchayat.co.in
+	    User Pass:- {SSHA}2P3GnmHx8Cr1Ak6pHqVyMQvdpLfRUzU6
+
+
+adding new entry "mail=ardhapur2601@epanchayat.co.in,ou=Users,domainName=epanchayat.co.in,o=domains,dc=epanchayat,dc=co,dc=in"
+
+ardhapur2601@epanchayat.co.in created successfully.
+
+	    User Name:- chanapur2601
+	    Full Name:- NANDED-ARDHAPUR-GP-chanapur
+	Email Address:- chanapur2601@epanchayat.co.in
+	    User Pass:- {SSHA}mNUd6r/cJY0+5bwYXSKq6C0fDd4Pvp4s
+
+
+adding new entry "mail=chanapur2601@epanchayat.co.in,ou=Users,domainName=epanchayat.co.in,o=domains,dc=epanchayat,dc=co,dc=in"
+
+chanapur2601@epanchayat.co.in created successfully.
+
+	    User Name:- loni.ku2601
+	    Full Name:- NANDED-ARDHAPUR-GP-loni.ku
+	Email Address:- loni.ku2601@epanchayat.co.in
+	    User Pass:- {SSHA}L7ZIsAwCGhKZNPzMJA+KmOuXA+DFL5lF
+
+
+adding new entry "mail=loni.ku2601@epanchayat.co.in,ou=Users,domainName=epanchayat.co.in,o=domains,dc=epanchayat,dc=co,dc=in"
+
+loni.ku2601@epanchayat.co.in created successfully.
