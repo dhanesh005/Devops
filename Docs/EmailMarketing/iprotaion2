@@ -1,0 +1,49 @@
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 178.162.204.219
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.193
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.194
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.195
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.196
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.197
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.198
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.199
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.200
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.201
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.202
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.203
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.204
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.205
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.206
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.207
+iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 16 --packet 0 -j SNAT --to-source 185.17.145.207
+  499  tail -f /var/log/maillog
+
+127.0.0.1       localhost.localdomain   localhost
+    ifconfig br0:2 185.17.145.193 netmask 255.255.255.192
+   ifconfig br0:2 185.17.145.194 netmask 255.255.255.192
+   ifconfig br0:3 185.17.145.195 netmask 255.255.255.192
+   ifconfig br0:4 185.17.145.196 netmask 255.255.255.192
+   ifconfig br0:5 185.17.145.197 netmask 255.255.255.192
+   ifconfig br0:6 185.17.145.198 netmask 255.255.255.192
+   ifconfig br0:7 185.17.145.199 netmask 255.255.255.192
+   ifconfig br0:8 185.17.145.200 netmask 255.255.255.192
+   ifconfig br0:9 185.17.145.201 netmask 255.255.255.192
+   ifconfig br0:10 185.17.145.202 netmask 255.255.255.192
+   ifconfig br0:11 185.17.145.203 netmask 255.255.255.192
+   ifconfig br0:12 185.17.145.204 netmask 255.255.255.192
+   ifconfig br0:13 185.17.145.205 netmask 255.255.255.192
+   ifconfig br0:14 185.17.145.206 netmask 255.255.255.192
+   ifconfig br0:15 185.17.145.207 netmask 255.255.255.192
+
+5589621803448811
+
+
+
+dsem1.itbuyertoday.com,dsem2.itbuyertoday.com,dsem3.itbuyertoday.com,dsem4.itbuyertoday.com,dsem5.itbuyertoday.com,dsem6.itbuyertoday.com,dsem7.itbuyertoday.com,dsem8.itbuyertoday.com,dsem9.itbuyertoday.com,dsem10.itbuyertoday.com,dsem11.itbuyertoday.com,dsem12.itbuyertoday.com,dsem13.itbuyertoday.com,dsem14.itbuyertoday.com,dsem15.itbuyertoday.com,dsem16.itbuyertoday.com
+185.17.145.193,185.17.145.194,185.17.145.195,185.17.145.196,185.17.145.197,185.17.145.198,185.17.145.199,185.17.145.200,185.17.145.201,185.17.145.202,185.17.145.203,185.17.145.204,185.17.145.205,185.17.145.206,185.17.145.207
+
+
+
+Type: TXT
+Host/Name: dsem1.itbuyertoday.com
+Value: v=spf1 a:dsem2.itbuyertoday.com a:dsem3.itbuyertoday.com a:dsem4.itbuyertoday.com a:dsem5.itbuyertoday.com a:dsem6.itbuyertoday.com a:dsem7.itbuyertoday.com a:dsem8.itbuyertoday.com a:dsem9.itbuyertoday.com a:dsem10.itbuyertoday.com a:dsem11.itbuyertoday.com a:dsem12.itbuyertoday.com a:dsem13.itbuyertoday.com a:dsem14.itbuyertoday.com a:dsem15.itbuyertoday.com a:dsem16.itbuyertoday.com ip4:185.17.145.193 ip4:185.17.145.194 ip4:185.17.145.195 ip4:185.17.145.196 ip4:185.17.145.197 ip4:185.17.145.198 ip4:185.17.145.199 ip4:185.17.145.200 ip4:185.17.145.201 ip4:185.17.145.202 ip4:185.17.145.203 ip4:185.17.145.204 ip4:185.17.145.205 ip4:185.17.145.206 ip4:185.17.145.207 ~all
+

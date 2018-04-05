@@ -1,0 +1,37 @@
+ifconfig br0:2 185.17.145.193 netmask 255.255.255.192
+ifconfig br0:2 185.17.145.194 netmask 255.255.255.192
+ifconfig br0:3 185.17.145.195 netmask 255.255.255.192
+ifconfig br0:4 185.17.145.196 netmask 255.255.255.192
+ifconfig br0:5 185.17.145.197 netmask 255.255.255.192
+ifconfig br0:6 185.17.145.198 netmask 255.255.255.192
+ifconfig br0:7 185.17.145.199 netmask 255.255.255.192
+ifconfig br0:8 185.17.145.200 netmask 255.255.255.192
+ifconfig br0:9 185.17.145.201 netmask 255.255.255.192
+ifconfig br0:10 185.17.145.202 netmask 255.255.255.192
+ifconfig br0:11 185.17.145.203 netmask 255.255.255.192
+ifconfig br0:12 185.17.145.204 netmask 255.255.255.192
+ifconfig br0:13 185.17.145.205 netmask 255.255.255.192
+ifconfig br0:14 185.17.145.206 netmask 255.255.255.192
+ifconfig br0:15 185.17.145.207 netmask 255.255.255.192
+
+544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061
+
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+cat <<EOF | sudo tee -a /etc/httpd/conf.d/mautic.conf
+<VirtualHost *:80>
+ServerAdmin admin@itbuyertoday.com
+DocumentRoot /var/www/html/mautic/
+ServerName ds.itbuyertoday.com
+<Directory /var/www/html/mautic/>
+Options FollowSymLinks
+AllowOverride All
+Order allow,deny
+allow from all
+</Directory>
+ErrorLog /var/log/httpd/ds.itbuyertoday.com-error_log
+CustomLog /var/log/httpd/ds.itbuyertoday.com-access_log common
+</VirtualHost>
+EOF
+
+port=443 proto=tcp:toport=443:toaddr=192.168.122.176

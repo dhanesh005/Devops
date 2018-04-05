@@ -1,0 +1,560 @@
+[root@localhost ~]# history
+    1  exit
+    2  passwd
+    3  exit
+    4  top -cd
+    5  top -cd2
+    6  clear
+    7  ll
+    8  cat /proc/cpuinfo 
+    9  clear
+   10  top- cd2
+   11  top -cd2
+   12  clear
+   13  free -m
+   14  rpm -qa|grep wget
+   15  df -h
+   16  clear
+   17  top -cd2
+   18  yum update 
+   19  ping google.com
+   20  cat /etc/yum.repos.d/CentOS-Base.repo 
+   21  yum update 
+   22  ifconfig
+   23  yum clean all
+   24  yum update
+   25  setup
+   26  cat /etc/redhat-release 
+   27  free -l
+   28  fdisk -l
+   29  cat /proc/cpuinfo |less
+   30   cd /etc/sysconfig/network-scripts/
+   31  ls
+   32  cat ifcfg-eth0 
+   33  cat ifcfg-eth1 
+   34  ethtool eth0
+   35  ethtool eth1
+   36  yum install kvm qemu-kvm python-virtinst libvirt libvirt-python virt-manager libguestfs-tools
+   37  chkconfig libvirtd on
+   38  service libvirtd start
+   39  service libvirtd status
+   40  virsh -c qemu:///system list
+   41  yum groupinstall "Virtualisation Tools" "Virtualization Platform"
+   42  yum install python-virtinst
+   43  yum install vnc-server
+   44  vncpasswd 
+   45  chkconfig vncserver on
+   46  chkconfig libvirtd off
+   47  vncserver
+   48  ps -aux|grep vnc
+   49  ps -aux
+   50  yum install nautilus gdm gnome-session xorg-x11-xinit xorg-x11-xkb-utils xorg-x11-server-Xorg xorg-x11-xauth
+   51   yum install gnome-core xfce4 firefox
+   52  yum install vnc-server
+   53   yum install tigervnc-server
+   54  chkconfig vncserver on
+   55  useradd dshore
+   56  su - dshore
+   57  vi /etc/sysconfig/vncservers
+   58  vim /etc/sysconfig/vncservers
+   59  service vncserver restart
+   60  pkill vnc
+   61  vim /home/srijan/.vnc/xstartup
+   62  ls
+   63  whoami
+   64  vim /home/srijan/.vnc/xstartup
+   65  vim /home/dshore/.vnc/xstartup 
+   66  reboot
+   67  top -c
+   68  vim /home/dshore/.vnc/xstartup 
+   69  vim /etc/sysconfig/vncservers
+   70  pkill vnc
+   71  /etc/init.d/vncserver restart
+   72  vim /etc/sysconfig/vncservers
+   73  /etc/init.d/vncserver restart
+   74  vim /etc/sysconfig/vncservers
+   75  /etc/init.d/vncserver restart
+   76  yum groupinstall "Desktop"
+   77  /etc/init.d/vncserver restart
+   78  cd /etc/sysconfig/network-scripts/
+   79  ls
+   80  cp ifcfg-eth0 ifcfg-br0
+   81  ifconfig
+   82  ls
+   83  vim ifcfg-br0 
+   84  ll
+   85  vim eth0
+   86  vim ifcfg-eth0 
+   87  ls
+   88  vim /etc/selinux/config 
+   89  vim ifcfg-br0 
+   90  cp ifcfg-eth0 backupifcfg-eth0.txt
+   91  ls
+   92  vim ifcfg-eth0 
+   93  vim ifcfg-br0 
+   94  ll
+   95  vim ifcfg-br0 
+   96  /etc/init.d/network restart
+   97  ifconfig
+   98  pkill vnc
+   99  /etc/init.d/vncserver restart
+  100  /etc/init.d/libvirtd status
+  101  /etc/init.d/libvirtd start
+  102  cat /etc/redhat-release 
+  103  cd 
+  104  ls
+  105  cd /opt/
+  106  ls
+  107  cd ..
+  108  cd /opt/
+  109  ls
+  110  mkdir ISO
+  111  cd ISO/
+  112  wget http://mirror.nbrc.ac.in/centos/6.9/isos/x86_64/CentOS-6.9-x86_64-minimal.iso
+  113  ls
+  114  du -sh
+  115  pkill vnc
+  116  /etc/init.d/vncserver restart
+  117  chkconfig vncserver on
+  118  chkconfig libvirtd on
+  119  ifconfig
+  120  passwd
+  121  tail -f /var/log/messages 
+  122  tail -f /var/log/secure 
+  123  yum install epel-release
+  124  yum install fail2ban
+  125  vim /etc/fail2ban/jail.conf
+  126  vim /etc/fail2ban/jail.local
+  127  vim /etc/fail2ban/action.d/mail-whois.conf 
+  128  service fail2ban restart
+  129  tail -f /var/log/secure 
+  130  iptables -L
+  131  tail -f /var/log/secure 
+  132  cat /var/log/secure 
+  133  clear
+  134  top -cd2
+  135  virish --list
+  136  clear
+  137  pkill vnc
+  138   virsh list --all
+  139  clear
+  140   virsh list --all
+  141  /etc/init.d/vncserver restart
+  142  history
+  143  cat /etc/sysconfig/network-scripts/ifcfg-br0 
+  144  cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+  145  cd /etc/sysconfig/
+  146  cd network-scripts/
+  147  ls
+  148  diff ifcfg-br0 ifcfg-eth0 
+  149  clear
+  150  pkill vnc
+  151  clear
+  152  /etc/init.d/vncserver restart
+  153  ehtool eth0
+  154  ehtools eth0
+  155  ethool eth0
+  156  ethtool eth0
+  157  ethtool br0
+  158  ifconfig
+  159  chkconfig --level 23 fail2ban on
+  160  service fail2ban start
+  161  iptables -L
+  162  cat /var/log/secure 
+  163  iptables -L -n
+  164  iptables -L -n -V
+  165  iptables -L -n -v
+  166  clear
+  167  ll
+  168  iptables -L -n
+  169  netstat -antp
+  170  w
+  171  tcpkill -i 58.218.198.151
+  172  pkill vnc
+  173  netstat -antp
+  174  tail -f /var/log/messages 
+  175  /etc/init.d/vncserver restart
+  176  netstat -antp
+  177  password
+  178  passwd
+  179  netstat -antp
+  180  pkill vnc
+  181  netstat -antp
+  182  pkill vnc
+  183  top -cd 
+  184  top -cd2
+  185  last
+  186  netstat -antp
+  187  /etc/init.d/vncserver restart
+  188  netstat -antp
+  189  top -cd2
+  190  netstat -antp
+  191  iptables -L
+  192  locate allow.local
+  193  locate allow
+  194  clear
+  195  top -cd2
+  196  ll
+  197  top -cd2
+  198  netstat -antp
+  199  iptables -L
+  200  iptables -L -n
+  201  tail -f /var/log/maillog
+  202  tail -f /var/log/secure 
+  203  date
+  204  timedatectl
+  205  ls /usr/share/zoneinfo/
+  206  date
+  207  cd /usr/share/zoneinfo/
+  208  cd Indian/
+  209  ls
+  210  cd ..
+  211  cd Asia/
+  212  ls
+  213  date
+  214  time
+  215  ll
+  216  clear
+  217  ll
+  218  hwclock --show
+  219  cat /etc/localtime 
+  220  ls
+  221   Calcutta
+  222  cd  Calcutta
+  223  mv /etc/localtime /root/localtime.old
+  224  ln -s /usr/share/zoneinfo/Asia/Calcutta /etc/localtime
+  225  date
+  226  clear
+  227  top -cd2
+  228  cd 
+  229  clear
+  230  top -cd2
+  231  ifconfig
+  232  cat /etc/sysconfig/network-scripts/ifcfg-eth0
+  233  ipdown eth0:1
+  234  ifconfig
+  235  cd  /etc/sysconfig/network-scripts/
+  236  ls
+  237  vim ifcfg-eth0:1
+  238  /etc/init.d/network restart
+  239  vim ifcfg-eth0
+  240  ifconfig
+  241  ls
+  242  vim ifcfg-eth0:1
+  243  vim ifcfg-eth0
+  244  vim ifcfg-eth0:1
+  245  ifconfig
+  246  clear
+  247  top -cd2
+  248  ls
+  249  clear
+  250  ll
+  251  vim eth1
+  252  ls
+  253  vim ifcfg-eth1 
+  254  cp ifcfg-eth1 ifcfg-eth1bk
+  255  ls
+  256  ll
+  257  vim ifcfg-eth1 
+  258  ifup eth1
+  259  /etc/init.d/network restart
+  260  ifconfig
+  261  ls
+  262  vim ifcfg-eth1
+  263  mv ifcfg-eth0:1 bkifcfg-eth0:1
+  264  ls
+  265  /etc/init.d/network restart
+  266  vim ifcfg-eth1
+  267  ls
+  268  mv ifcfg-eth1 ifcfg-eth1.txt
+  269  ls
+  270  mv ifcfg-eth1bk ifcfg-eth1
+  271  ls
+  272  cat eth1
+  273  cat ifcfg-eth1
+  274  ls
+  275  mv bkifcfg-eth0:1
+  276  ls bkifcfg-eth0:1
+  277  vim bkifcfg-eth0:1
+  278  mv bkifcfg-eth0:1 ifcfg-eth1:1
+  279  ls
+  280  vim ifcfg-eth1:1
+  281  /etc/init.d/network restart
+  282  tail -f /var/log/messages 
+  283  vim ifcfg-eth1:1
+  284  ifup eth1:1
+  285  clear
+  286  cat /etc/sysconfig/network-scripts/ifcfg-br0 
+  287  clear
+  288  top -cd2
+  289  ifconfig
+  290  pkill vnc
+  291  /etc/init.d/vncserver restart
+  292  netstat -antp
+  293  rpm -qa |grep bridge-utils
+  294  uname -a
+  295  hostname -i
+  296  ifconfig
+  297  pkill vnc
+  298  /etc/init.d/vncserver restart
+  299  clear
+  300  ll
+  301  tail -f /var/log/messages 
+  302  iptables -L
+  303  tail -f /var/log/secure 
+  304  cat /var/log/secure 
+  305  stup
+  306  setup
+  307  cd /etc/sysconfig/network-scripts/
+  308  ls
+  309  vim ifcfg-eth1.txt 
+  310  setup
+  311  ls
+  312  vim ifcfg-eth1
+  313  vim ifcfg-eth1:1
+  314  /etc/init.d/network restart
+  315  mv backupifcfg-eth0.txt /home/
+  316  mv bkifcfg-eth0bk /home/
+  317  /etc/init.d/network restart
+  318  vim ifcfg-eth0 
+  319  /etc/init.d/network restart
+  320  vim ifcfg-eth0 
+  321  /etc/init.d/network restart
+  322  ifconfig
+  323  ls
+  324  clear
+  325  virsh list --all
+  326  virsh shutdown Mautic_Server
+  327  virsh list --all
+  328  clear
+  329  ll
+  330  clear
+  331  virsh list --all
+  332  virsh shutdown Mautic_Server
+  333  virsh list --all
+  334  virsh destroy Mautic_Server
+  335  virsh list --all
+  336  clear
+  337  top -cd2
+  338  stup 
+  339  setup 
+  340  clear
+  341  top -cd2
+  342  clear
+  343  /etc/init.d/network restrat
+  344  /etc/init.d/network restarat
+  345  /etc/init.d/network restart
+  346  tail -f /var/log/messages 
+  347  tail -f /var/log/secure 
+  348  iptables -L
+  349  tail -f /var/log/secure 
+  350  tail -f /var/log/messages 
+  351  netstat -antp
+  352  netstat -a
+  353  netstat -atc
+  354  netstat -atu
+  355  clear
+  356  ll
+  357  clear
+  358  top -cd2
+  359  history
+  360  vim /etc/fail2ban/jail.conf
+  361  /etc/init.d/fail2ban restart
+  362  tail -f /var/log/messages 
+  363  iptables -L 
+  364  iptables -L -n
+  365  clear
+  366  top -cd2
+  367  df -lh
+  368  virsh list
+  369  virsh list --all
+  370  brctl show
+  371  virsh start Mautic_Server
+  372  ifconfig 
+  373  netstat -antp
+  374  virsh start Mautic_Server
+  375  virsh edit  Mautic_Server
+  376  virsh delete  Mautic_Server
+  377  virsh remove   Mautic_Server
+  378  virsh ?
+  379  virsh 
+  380  killall Xvnc
+  381  history | grep vnc
+  382   /etc/init.d/vncserver restart
+  383  ifconfig 
+  384  brctl show
+  385  ifconfig 
+  386  ls
+  387  hostname
+  388  cat /etc/hosts
+  389  vi /etc/hosts
+  390  host -i
+  391  vi /etc/hosts
+  392  netstat -nr
+  393  ifconfig 
+  394  ifconfig br0:1 185.17.145.193 netmask 255.255.255.192
+  395  netstat -nr
+  396  ifconfig 
+  397  netstat -nr
+  398  route add 185.17.145.192/26 via 185.17.145.254
+  399  route add  -net 185.17.145.192/26 gw  185.17.145.254
+  400  chkconfig fail2ban off
+  401  service fail2ban stop
+  402  netstat -nr
+  403  ifconfig 
+  404  netstat -nr
+  405  ping 185.17.145.193
+  406  ping 185.17.145.192
+  407  ping 185.17.145.254
+  408  history 
+  409  ifconfig br0:2 185.17.145.194 netmask 255.255.255.192
+  410  ifconfig br0:3 185.17.145.195 netmask 255.255.255.192
+  411  ifconfig br0:4 185.17.145.196 netmask 255.255.255.192
+  412  ifconfig br0:5 185.17.145.197 netmask 255.255.255.192
+  413  ifconfig br0:6 185.17.145.198 netmask 255.255.255.192
+  414  ifconfig br0:7 185.17.145.199 netmask 255.255.255.192
+  415  ifconfig br0:8 185.17.145.200 netmask 255.255.255.192
+  416  ifconfig br0:9 185.17.145.201 netmask 255.255.255.192
+  417  ifconfig br0:10 185.17.145.202 netmask 255.255.255.192
+  418  ifconfig br0:11 185.17.145.203 netmask 255.255.255.192
+  419  ifconfig br0:12 185.17.145.204 netmask 255.255.255.192
+  420  ifconfig br0:13 185.17.145.205 netmask 255.255.255.192
+  421  ifconfig br0:14 185.17.145.206 netmask 255.255.255.192
+  422  ifconfig br0:15 185.17.145.207 netmask 255.255.255.192
+  423  ifconfig 
+  424  yum install postfix
+  425  yum install dovecot mariadb-server dovecot-mysql
+  426  getenforce 
+  427  iptables -L
+  428  iptables -F
+  429  hostname 
+  430  cat /etc/hosts
+  431  cat /etc/redhat-release 
+  432  yum upgrade
+  433  vi /etc/sysconfig/selinux 
+  434  vi /etc/sysconfig/network
+  435  yum install dovecot mariadb-server dovecot-mysql
+  436  yum install cyrus-sasl
+  437  yum install cyrus-imapd
+  438  vi /etc/postfix/main.cf
+  439  hostname
+  440  cat /etc/hosts
+  441  vi /etc/postfix/main.cf
+  442  cp /etc/postfix/main.cf /etc/postfix/main.cf_bkp
+  443  vim /etc/postfix/main.cf
+  444   vi /etc/postfix/virtual
+  445  postmap /etc/postfix/virtual 
+  446  touch /etc/postfix/body_checks 
+  447   vi /etc/sasl2/smtpd.conf
+  448  vi /etc/imapd.conf
+  449  yum install mailx
+ 
+  451  tail -f /var/log/messages 
+  452  tail -f /var/log/milal
+  453  tail -f /var/log/maillog
+  454  vi /etc/imapd.conf
+  455  yum install cyrus-sasl-plain
+  456  vi /etc/sasl2/smtpd.conf .
+  457  vi /etc/sasl2/smtpd.conf 
+  458  service postfix status
+  459  service postfix restart
+  460  service postfix status
+  461   /sbin/service cyrus-imapd start
+  462   /sbin/service cyrus-imapd status
+  463   /etc/init.d/saslauthd start
+  464   /etc/init.d/saslauthd status
+  465  /usr/sbin/pluginviewer 
+  466   testsaslauthd -u mailusername -p mailpassword
+  467   testsaslauthd -u rahulk@itbuyertoday.com -p mailpassword
+  468   /usr/bin/imtest -u mailusername -a mailusername -w mailpassword domain.com
+  469  useradd rahulk
+  470  passwd rahulk
+  471   testsaslauthd -u rahulk@itbuyertoday.com -p 123456@abc
+  472  vi /etc/sasl2/smtpd.conf 
+  473  vi /etc/sysconfig/saslauthd 
+  474  saslauthd -a shadow
+  475  service saslauthd status
+  476  service saslauthd stop
+  477  saslauthd -a shadow
+  478  service saslauthd status
+  479   testsaslauthd -u rahulk@itbuyertoday.com -p 123456@abc
+  480   testsaslauthd -u rahulk -p 123456@abc
+  481  service saslauthd stop
+  482  service saslauthd start
+  483   testsaslauthd -u rahulk -p 123456@abc
+  484  tail -f /var/log/maillog
+  485  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.193
+  486  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.194
+  487  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.195
+  488  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.193
+  489  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.194
+  490  iptables -t nat -I POSTROUTING -m state –state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.195
+  491  iptables -h
+  492  man iptables
+  493  iptables -t nat -I POSTROUTING -m state –-state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.193
+  494  iptables -t nat -I POSTROUTING -m state –-state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.194
+  495  iptables -t nat -I POSTROUTING -m state -–state NEW -p tcp –dport 25 -o br0 -m statistic –mode nth –every 3 –packet 0 -j SNAT –to-source 185.17.145.195
+  496  iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 3 --packet 0 -j SNAT --to-source 185.17.145.193
+  497  iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 3 --packet 0 -j SNAT --to-source 185.17.145.194
+  498  iptables -t nat -I POSTROUTING -m state --state NEW -p tcp --dport 25 -o br0 -m statistic --mode nth --every 3 --packet 0 -j SNAT --to-source 185.17.145.195
+  499  tail -f /var/log/maillog
+  500  yum install httpd
+  501  yum install epel-release -y
+  502  rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
+  503  yum install -y php70w php70w-mysqlnd php70w-common php70w-cli php70w-xml php70w-mbstring php70w-gd php70w-mcrypt php70w-opcache php70w-imap php70w-process php70w-intl
+  504  cd /var/www/
+  505  ls
+  506  mv html html_bkp
+  507  cd
+  508  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  509  php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  510  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  511  ls
+  512  php composer-setup.php
+  513  php -r "unlink('composer-setup.php');"
+  514  sudo mv composer.phar /usr/local/bin/composer
+  515  ll /usr/local/bin/composer
+  516   yum install git -y
+  517  yum install mysql-server
+  518  mysql -u root -p
+  519  service mysqld restart
+  520  /usr/bin/mysqladmin -u root password 'mautic@1253'
+  521  service mysqld restart
+  522  mysql -u root -p
+  523  wget https://github.com/mautic/mautic/archive/2.12.1.tar.gz
+  524  tar -xvzf 2.12.1.tar.gz 
+  525  cd mautic-2.12.1/
+  526  ls
+  527  git init
+  528  ls
+  529  composer install
+  530  yum install php70-bcmath
+  531  yum install *bcmath*
+  532  yum remove php
+  533  yum install php70w-bcmath.x86_64
+  534  composer install
+  535  ll
+  536  cd ..
+  537  cp mautic-2.12.1 /var/www/html
+  538  cp mautic-2.12.1 /var/www/html -r
+  539  chown apache.apache -R /var/www/html
+  540  vi /etc/php.ini 
+  541  service httpd restart
+  542  ifconfig 
+  543  tail -f /var/log/httpd/error_log 
+  544* 
+  545  vi /etc/php.ini 
+  546  service httpd restart
+  547  hostname
+  548  mysql -u root 0p
+  549  mysql -u root -p
+  550  tail -f /var/log/httpd/access_log 
+  551  tail -f /var/log/httpd/error_log 
+  552  tail -f /var/log/maillog
+  553  service saslauthd status
+  554  service postfix  status
+  555  tail -f /var/log/maillog
+  556  ifconfig
+  557  hostname
+  558  history
+
