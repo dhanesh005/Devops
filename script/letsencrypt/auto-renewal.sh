@@ -22,7 +22,9 @@ fi
 if [ -f "letsencrypt-auto"]; then
  
 	letsencrypt-auto renew --standalone -d mailserv.qedbaton.com
+
 	sleep 600
+
         echo "Certificate is Renewed successfully" >>/tmp/sslrenewlog.txt
 else
         echo "Error in Renewing Certificate" >>/tmp/sslrenewlog.txt
@@ -30,7 +32,11 @@ fi
 if [ -d "/opt/zimbra/ssl/letsencrypt/"]; then
 
 	cd /opt/zimbra/ssl/letsencrypt/
-	cp /etc/letsencrypt/live/mailserv.qedbaton.com-0001/ .
+
+        mv /opt/zimbra/ssl/letsencrypt/* /tmp/backupssl/
+
+	cp /etc/letsencrypt/live/mailserv.qedbaton.com-0001/* .
+
 	echo "Cetificate Copied successfully" >>/tmp/sslrenewlog.txt
 else 
 
